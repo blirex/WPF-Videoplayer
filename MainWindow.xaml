@@ -5,8 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Videoplayer"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="Videoplayer" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid Background="LightSteelBlue">
+        <Border BorderBrush="Black" BorderThickness="1" Margin="10,10,10,56"/>
+        <Button x:Name="Play" Margin="23,367,720,10">
+            <Image Source="Resourses\play.png" Height="35" Width="28"/>
+        </Button>
+
+        <Button x:Name="Pause" Margin="85,367,663,10">
+            <Image Source="Resourses\pause.png" Height="29" Width="28"/>
+        </Button>
+
+        <Button x:Name="Stop" Margin="142,367,605,10">
+            <Image Source="Resourses\stop.png" Height="52" Width="26"/>
+        </Button>
+
+        <Button x:Name="Exit" Margin="721,367,22,10">
+            <Image Source="Resourses\exit.png" Height="29" Width="19"/>
+        </Button>
 
     </Grid>
 </Window>
