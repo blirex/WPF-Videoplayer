@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Videoplayer" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Grid Background="LightSteelBlue">
-        <Border BorderBrush="Black" BorderThickness="1" Margin="10,10,10,56"/>
+        <Border BorderBrush="Black" BorderThickness="1" Margin="10,30,10,56"/>
         <Button x:Name="Play" Margin="23,367,720,10">
             <Image Source="Resourses\play.png" Height="35" Width="28"/>
         </Button>
@@ -24,5 +24,8 @@
             <Image Source="Resourses\exit.png" Height="29" Width="19"/>
         </Button>
 
+        <Button Margin="653,1,10,383" Content="Browse Video"/>
+        <MediaElement Margin="10,30,10,56"/>
+        <TextBox Height="50" Margin="10,1,476,383" FontSize="17"/>
     </Grid>
 </Window>
