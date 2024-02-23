@@ -5,27 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Videoplayer"
         mc:Ignorable="d"
-        Title="Videoplayer" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+        Title="Videoplayer" Height="450" Width="800" WindowStartupLocation="CenterScreen" Loaded="window_loaded">
     <Grid Background="LightSteelBlue">
         <Border BorderBrush="Black" BorderThickness="1" Margin="10,30,10,56"/>
-        <Button x:Name="Play" Margin="23,367,720,10">
+        <Button x:Name="Play" Margin="23,367,720,10" Click="Play_Click">
             <Image Source="Resourses\play.png" Height="35" Width="28"/>
         </Button>
 
-        <Button x:Name="Pause" Margin="85,367,663,10">
+        <Button x:Name="Pause" Margin="85,367,663,10" Click="Pause_Click">
             <Image Source="Resourses\pause.png" Height="29" Width="28"/>
         </Button>
 
-        <Button x:Name="Stop" Margin="142,367,605,10">
+        <Button x:Name="Stop" Margin="142,367,605,10" Click="Stop_Click">
             <Image Source="Resourses\stop.png" Height="52" Width="26"/>
         </Button>
 
-        <Button x:Name="Exit" Margin="721,367,22,10">
+        <Button x:Name="Exit" Margin="721,367,22,10" Click="Exit_Click">
             <Image Source="Resourses\exit.png" Height="29" Width="19"/>
         </Button>
 
-        <Button Margin="653,1,10,383" Content="Browse Video"/>
-        <MediaElement Margin="10,30,10,56"/>
-        <TextBox Height="50" Margin="10,1,476,383" FontSize="17"/>
+        <Button x:Name="BrowseButton" Margin="653,1,10,383" Content="Browse Video" Click="BrowseButton_Click"/>
+        <MediaElement x:Name="me" Margin="10,30,10,56"/>
+        <TextBox x:Name="Pathbox" Height="50" Margin="10,1,476,383" FontSize="17"/>
     </Grid>
 </Window>
